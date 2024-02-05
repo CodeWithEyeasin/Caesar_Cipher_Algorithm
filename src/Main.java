@@ -9,15 +9,16 @@ public class Main {
         boolean istrue=false;
         while (!istrue){
             int Option=scanner.nextInt();
-            switch (Option){
-                case 1: encryption();
-                istrue=true;
-                    break;
-                case 2:decryption();
-                istrue=true;
-                    break;
-                default:
-                    System.out.println("Please Enter The Right Option");
+            switch (Option) {
+                case 1 -> {
+                    encryption();
+                    istrue = true;
+                }
+                case 2 -> {
+                    decryption();
+                    istrue = true;
+                }
+                default -> System.out.println("Please Enter The Right Option");
             }
         }
 
